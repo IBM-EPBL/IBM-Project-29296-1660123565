@@ -1,0 +1,140 @@
+<html lang="en" dir="ltr">
+<head>
+<link rel="stylesheet" href="../StyleSheets/css/value.css">
+<title>Car resale value</title>
+</head>
+<body>
+<section class="form">
+<form action="http://localhost:5000/predict" method="GET">
+<table border="0" align="center">
+<tbody>
+<h1>Resale Value of Your Car</h1>
+<tr>
+<td><label for="year" padding:10px>Registration year : </label></td>
+<td><input id="year" maxlength="50" name="regyear" type="text" />	<br><br>
+</td>
+</tr>
+<tr>
+<td><label for="month">Registration Month : </label></td>
+<td><input id="month" maxlength="50" name="regmonth" type="text" /><br>
+<br>
+</td></tr>
+<tr>
+<td><label for="power">Power of car in PS: </label></td>
+<td><input id="power" maxlength="50" name="powerps" type="text" />
+<br><br></td></tr><tr>
+<td><label for="kilometer">Kilometers that car have driven : </label></td>
+<td><input id="kilometer" maxlength="50" name="kms" type="text" />
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td><label for="geartype">Gear type : </label></td>
+<td><input type="radio" name="geartype" value="manual"/> Manual 
+<input type="radio" name="geartype" value="automatic"/> Automatic   
+<input type="radio" name="geartype" value="not-declared"/> Not declared 
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td><label for="damage">Your car is repaired : </label></td>
+<td><input type="radio" name="damage" value="yes"/> Yes
+<input type="radio" name="damage" value="no"/> No  
+<input type="radio" name="damage" value="not-declared"/> Not declared 
+<br><br></td></tr><tr><td><label for="model">Model Type : </label></td><td>
+<select name="model" id="model"> 
+<option value="" disabled selected hidden>Choose Model Name</option>
+<option value="golf">Golf </option>
+<option value="grand">Grand </option>
+<option value="fabia">Fabia </option>
+<option value="3er">3er </option>
+<option value="2_reihe">2 Reihe </option>
+<option value="andere">Andere </option>
+<option value="c_max">C Max </option>
+<option value="3_reihe">3 Reihe </option>
+<option value="passat">Passat </option>
+<option value="navara">Navara </option>
+<option value="ka">Ka </option>
+<option value="polo">Polo </option>
+<option value="twingo">Twingo </option>
+<option value="a_klasse">A klasse </option>
+<option value="scirocco">Scirocco </option>
+<option value="5er">5er </option>
+<option value="meriva">Meriva </option>
+<option value="arosa">Arosa </option>
+<option value="c4">C4 </option>
+<option value="civic">Civic </option>
+<option value="transporter">Transporter </option>
+<option value="punto">Punto </option>
+<option value="e_klasse">E Klasse </option>
+<option value="clio">Clio </option>
+</select> <br><br>
+</td></tr>
+<tr>
+<td><label for="brand">Brand :</label></td>
+<td>
+<select name="brand" id="brand">
+<option value="" disabled selected hidden>Choose Brand Name...</option>
+<option value="volkswagen">Volkswagen </option>
+<option value="audi">Audi </option>
+<option value="jeep">Jeep </option>
+<option value="skoda">Skoda </option>
+<option value="bmw">Bmw </option>
+<option value="peugeot">Peugeot </option>
+<option value="ford">Ford </option>
+<option value="mazda">Mazda </option>
+<option value="nissan">Nissan </option>
+<option value="renault">Renault </option>
+<option value="mercedes_benz">Mercedes Benz </option>
+<option value="opel">Opel </option>
+<option value="seat">Seat </option>
+<option value="citroen">Citroen </option>
+<option value="honda">Honda </option>
+</select>
+<br><br></td></tr>
+<tr>
+<td><label for="fuelType">Fuel Type :</label></td>
+<td>
+<select name="fuelType" id="brand">
+<option value="" disabled selected hidden>Choose Fuel Type...</option>
+<option value="petrol"> Petrol </option>
+<option value="diesel"> Diesel </option>
+<option value="not-declared"> Not Declared </option>
+<option value="lpg">LPG </option>
+<option value="cng">CNG </option>
+<option value="hybrid">Hybrid </option>
+<option value="others">Others </option>
+<option value="electric">Electric </option>
+</select>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td><label for="vehicletype">Vehicle type:</label></td>
+<td>
+<select name="vehicletype" id="vehicle" >
+<option value="" disabled selected hidden>Choose Vehicle Type...</option>
+<option value="coupe">Coupe </option>  
+<option value="suv">SUV </option>  
+<option value="kleinwagen">Kleinwagen </option>  
+<option value="limousine">Limousine </option>
+<option value="cabrio">Cabrio </option>
+<option value="bus">Bus </option>
+<option value="kombi">Kombi </option>
+<option value="andere">Andere </option>
+<option value="volkswagen">Volkswagen </option>
+</select>
+<br>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="Submit" type="Submit" value="Submit" id="button"/>
+</form> 
+</section>  
+</body
+</html>
